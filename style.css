@@ -1,20 +1,62 @@
-/* img{
-    transform: scaleX(-1);
-    width: 100%;
-    height: 100%;
-} */
+body{
+    background-image: url("https://images.unsplash.com/photo-1557683311-eac922347aa1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Ymx1ZSUyMGFuZCUyMHB1cnBsZSUyMGdyYWRpZW50fGVufDB8fDB8fHww");
+    background-size: cover;
 
-.container{
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
     display: flex;
     justify-content: space-around;
-    border: 2px solid black ;
+    align-items: center;
+}
+
+nav div{
+    display: inline;  
+    color: white;  
+}
+
+nav ul{
+    list-style: none;  
+    display: inline;
+}
+
+nav ul li{
+    float: left;
+    margin-left: 25px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav button{
+    border: 1px solid white;
+    margin-top: -4px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+}
+
+.flex-container{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .article{
     display: inline-block;
-    border: 2px solid black;
     width: 380px;
-    background-color: aquamarine;
 }
 
 .article h2{
@@ -42,8 +84,7 @@
 
 .form{
     background-color: white;
-    border: 2px solid black;
-    padding: 30px 30px 40px 30px;
+    padding: 30px 30px 35px 30px;
     display: flex;
     flex-direction: column;
     width: 250px;
@@ -56,6 +97,7 @@
     text-align: center;
     font-weight: 100;
     margin: 5px;
+    margin-bottom: 10px;
 }
 
 input, select{
@@ -65,9 +107,14 @@ input, select{
     padding: 8px;
     margin-bottom: 10px;
 }
+input{
+    width: 95%;
+}
 
 input[type="submit"]{
+    width: 100%;
     border-radius: 20px;
+    margin: auto;
     background-color: rgba(17, 96, 243, 0.842);
     color: white;
 }
